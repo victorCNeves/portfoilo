@@ -1,1 +1,191 @@
-!html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #eae0d5;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      #picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      #name {
+        color: #5E503F;
+        font-size: 2em;
+        margin-bottom: 0px;
+      }
+
+      #profession {
+        color: orange;
+        font-size: 2em;
+        margin-bottom: 0px;
+      }
+
+      .description {
+        font-size: 1.2em;
+        margin-top: 20px;
+      }
+
+      #projetos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .projeto {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 300px;
+        height: 400px;
+        text-align: left;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .projeto:hover {
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+      }
+
+      .title {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        color: #333;
+      }
+
+      .projectDescription {
+        font-size: 1em;
+        line-height: 1.5;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .linkProject {
+        font-size: 1em;
+        color: #2196F3;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid #2196F3;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .linkProject:hover {
+        background-color: #2196F3;
+        color: white;
+      }
+
+      footer {
+        text-align: left;
+        padding: 10px;
+        font-size: 1em;
+        color: #555;
+        border-top: 1px solid #ddd;
+      }
+
+
+      
+      .skill-card {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: box-shadow 0.3s;
+          }
+
+          .skill-card:hover {
+            box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+          }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="picture" src="profilePic.jpg" alt="Minha foto" />
+      <h3 id="name">Eu sou o Victor</h3>
+      <h1 id="profession">Eu sou um desenvolvedor</h1>
+      <p class="description">
+        Sou estudante de Análise e Desenvolvimento de Sistemas. Tenho
+        conhecimentos em Java, C, Pytdon, Dart e Flutter. Veja os projetos que
+        já desenvolvi.
+      </p>
+      <p class="description">Minhas habilidades</p>
+      <table>
+        <tr>
+          <td class="skill-card">Java</td>
+          <td class="skill-card">Dart</td>
+          <td class="skill-card">Python</td>
+          <td class="skill-card">Flutter</td>
+        </tr>
+      </table>
+      <div id="projetos">
+        <h3 id="meusProjetos">Meus projetos</h3>
+        <table>
+          <tr>
+            <td>
+              <div class="projeto">
+                <img src="fakerAPI.png" alt="" style="width: 100%; height: auto;" />
+                <h4 class="title">Faker</h4>
+                <p class="projectDescription">A Faker API é uma ferramenta essencial para desenvolvedores que precisam gerar dados fictícios de forma rápida e eficiente. Amplamente utilizada em testes, desenvolvimento de software e preenchimento de bancos de dados sem o uso de informações reais.</p>
+                <a class="linkProject" href="https://fakerjs.dev/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+              </div>
+            </td>
+            <td>
+              <div class="projeto">
+                <img src="timeAPI.png" alt="" style="width: 100%; height: auto;" />
+                <h4 class="title">Time API</h4>
+                <p class="projectDescription">A TimeAPI é uma solução prática para obter informações precisas sobre data e hora em diferentes fusos horários ao redor do mundo. Ideal para desenvolvedores que precisam sincronizar horários em aplicações web e sistemas distribuídos.</p>
+                <a class="linkProject" href="https://timeapi.io/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+              </div>
+            </td>
+            <td>
+              <div class="projeto">
+                <img src="catAPI.png" alt="" style="width: 100%; height: auto;" />
+                <h4 class="title">Cat API</h4>
+                <p class="projectDescription">A Cat API é um serviço online que fornece imagens e informações sobre gatos de forma programática, sendo amplamente utilizada por desenvolvedores para criar aplicações divertidas, educativas ou simplesmente para exibir fotos de gatos aleatórios.</p>
+                <a class="linkProject" href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <p>Entre em contato</p>
+      <a href="https://github.com/victorCNeves" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
+  </body>
+</html>
+
